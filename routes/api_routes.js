@@ -17,5 +17,16 @@ router.post("/notes", (req, res) => {
     fs.readFile("./db/db.json", "utf8", (err, data) => {
         if(err) throw err
         const newNotes = JSON.parse(data)
+        newNotes.push({
+            title: req.body.title,
+            text: req.body.text
+        });
+
+        fs.writeFile("./db/db.json", JSON.stringift(newNotes), (err) => {
+            if (err) res.JSON({ err: "adding unsuccessful"});
+            res.json ({msg: "added successfully"})
+        })
     })
 })
+
+module.export = router;
