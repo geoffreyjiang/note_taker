@@ -2,10 +2,10 @@ const router = require("express").Router();
 const { json } = require("body-parser");
 const fs = require('fs')
 const path = require("path");
-const db = path.join(__dirname, "../db/db.json");
+const db = path.join(__dirname, "../assets/db/db.json");
 
 router.get("/notes", (req, res) => {
-    fs.readFile("./db/db.json", "utf8", (err, data) => {
+    fs.readFile("../assets/db/db.json", "utf8", (err, data) => {
         if(err) throw err;
         
         const newNotes = JSON.parse(data);
@@ -14,7 +14,7 @@ router.get("/notes", (req, res) => {
 })
 
 router.post("/notes", (req, res) => {
-    fs.readFile("./db/db.json", "utf8", (err, data) => {
+    fs.readFile("../assets/db/db.json", "utf8", (err, data) => {
         if(err) throw err
         const newNotes = JSON.parse(data)
         newNotes.push({
@@ -22,11 +22,11 @@ router.post("/notes", (req, res) => {
             text: req.body.text
         });
 
-        fs.writeFile("./db/db.json", JSON.stringift(newNotes), (err) => {
-            if (err) res.JSON({ err: "adding unsuccessful"});
-            res.json ({msg: "added successfully"})
+        fs.writeFile("../assets/db/db.json", JSON.stringify(newNotes), (err) => {
+            if (err) res.JSON({ err: "Adding Unsuccessful"});
+            res.json ({msg: "Added Successfully"})
         })
     })
 })
 
-module.export = router;
+module.exports = router
