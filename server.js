@@ -1,8 +1,8 @@
 const express = require("express");
-const apiRoutes = require("./routes/api_routes")
+const apiRoutes = require("./routes/api-routes")
+const clientRoutes = require("./routes/client-routes");
 const PORT = process.env.PORT || 8000;
 const app = express();
-const clientRoutes = require("./routes/client_routes");
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
