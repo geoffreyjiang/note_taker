@@ -20,7 +20,7 @@ router.post("/notes", (req, res) => {
         });
 
         fs.writeFile("Develop/db/db.json", JSON.stringify(newNotes), (err) => {
-            if (err) return res.JSON({ err: "Adding Unsuccessful"});
+            if (err) res.JSON({ err: "Adding Unsuccessful"});
             res.json ({msg: "Added Successfully"})
         })
     })
