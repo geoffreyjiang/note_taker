@@ -13,7 +13,7 @@ router.get("/assets/css/styles.css", (req,res) => {
     res.sendFile(path.join(__dirname, "../public/assets/css/styles.css")); 
  })
 
- router.get("/js/index.js", (req,res) => {
+ router.get("/assets/js/index.js", (req,res) => {
     res.sendFile(path.join(__dirname, "../public/assets/js/index.js")); 
  })
 
