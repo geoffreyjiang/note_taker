@@ -31,6 +31,6 @@
     Express
     VS
   ## Github
-    
+    https://github.com/geoffreyjiang/note_taker
   ## Email
     geoffreychjiang@gmail.com
