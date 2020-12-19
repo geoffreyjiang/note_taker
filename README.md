@@ -1,5 +1,4 @@
-# 11 Express.js: Note Taker
-
+  ## Note Taker Using Express
 
   ## Table of Contents
     - [Description](#description)
@@ -19,9 +18,9 @@
   ## Usage:
     Type note title and text then click save
   ## Tests
-    
-    <img src= "Develop/public/assets/gif/notetaker.gif">
-  
+
+  <img src="Develop/public/assets/gif/notetaker.gif">
+
   ## Contributors
     Geoffrey Jiang 
     Victor Tran  
