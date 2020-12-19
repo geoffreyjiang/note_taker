@@ -19,7 +19,9 @@
   ## Usage:
     Type note title and text then click save
   ## Tests
-    Coming soon
+    
+    <img src= "Develop/public/assets/gif/notetaker.gif">
+  
   ## Contributors
     Geoffrey Jiang 
     Victor Tran  
