@@ -1,7 +1,7 @@
   ## Note Taker Using Express
 
   ## Table of Contents
-    - [Description](#description)
+    - #Description
     - [Installation](#installation)
     - [Usage](#usage)
     - [Tests](#tests)
